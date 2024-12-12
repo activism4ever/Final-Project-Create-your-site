@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about EcoHaven's conservation efforts, including wildlife preservation and sustainable living projects.">
+    <title>EcoHaven - Conservation Efforts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#main-content" class="skip-to-content">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conservation.html">Conservation Efforts</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project">
+                <h2>Project 1: Wildlife Reserve</h2>
+                <p>
+                    The Wildlife Reserve project is dedicated to protecting endangered species and preserving their natural habitats. This initiative focuses on creating safe, sustainable environments where wildlife can thrive without the threat of human encroachment, poaching, or environmental degradation.
+                </p>
+                <ul>
+                    <li>Establishing protected zones with monitored boundaries.</li>
+                    <li>Rehabilitating and reforesting degraded landscapes to restore ecosystems.</li>
+                    <li>Collaborating with local communities to promote coexistence and reduce conflicts with wildlife.</li>
+                    <li>Conducting educational programs to raise awareness about biodiversity conservation.</li>
+                </ul>
+                <p>This project serves as a beacon of hope for preserving Earth's precious flora and fauna for future generations.</p>
+                
+                <!-- Conservation Image for Project 1 -->
+                <div class="conservation-image">
+                    <img src="image/conservation1.jpeg" alt="Volunteers participating in a conservation effort">
+                    <img src="image/conservation2.jpeg" alt="Volunteers participating in a conservation effort">
+                </div>
+            </article>
+            
+            <!-- Project 2 -->
+            <article class="project">
+                <h2>Project 2: Sustainable Living</h2>
+                <p>
+                    The Sustainable Living project promotes eco-friendly practices and technologies to reduce environmental impact and foster a greener future. It focuses on empowering individuals and communities to adopt sustainable habits and resources.
+                </p>
+                <ul>
+                    <li>Encouraging the use of renewable energy sources like solar and wind power.</li>
+                    <li>Organizing workshops on waste management, recycling, and composting.</li>
+                    <li>Supporting sustainable agriculture practices, such as organic farming and water conservation techniques.</li>
+                    <li>Promoting green building designs and energy-efficient technologies in homes and workplaces.</li>
+                </ul>
+                <p>The project emphasizes the importance of small, collective actions in creating a significant positive impact on the planet, ensuring a sustainable lifestyle for generations to come.</p>
+                
+                <!-- Conservation Image for Project 2 -->
+                <div class="conservation-image">
+                    <img src="image/conservation1.jpeg" alt="Volunteers participating in a conservation effort">
+                    <img src="image/conservation2.jpeg" alt="Volunteers participating in a conservation effort">
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 EcoHaven. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
