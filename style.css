@@ -1,0 +1,343 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header, main, footer {
+    margin: auto;
+    max-width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #337ab7;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('image/hero-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero img {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    animation: spinLogo 2s infinite linear;
+}
+
+@keyframes spinLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Mission Section Styles */
+.mission {
+    background-color: #e9f7e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2 {
+    color: #4CAF50;
+}
+
+/* Services Section Styles */
+.services {
+    margin-bottom: 40px;
+}
+
+.services h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.services ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services li {
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services li strong {
+    color: #337ab7;
+}
+
+/* Testimonials Section Styles */
+.testimonials blockquote {
+    border-left: 4px solid #4CAF50;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-style: italic;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #337ab7;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #45a049;
+}
+
+footer form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 250px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero img {
+        width: 150px;
+    }
+
+    .services li {
+        font-size: 14px;
+    }
+
+    .footer-info a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    header, main, footer {
+        max-width: 100%;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    footer form {
+        flex-direction: column;
+    }
+
+    footer input[type="email"] {
+        width: 100%;
+    }
+}
+
+/* Gallery Section Styles */
+.gallery-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.gallery-flex img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-flex img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Grid Section Styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.projects-grid article {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-grid article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projects-grid h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.projects-grid p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.projects-grid img {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Conservation Image Styles */
+.conservation-image {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the images */
+    margin-top: 20px; /* Adds space between the project text and images */
+}
+
+.conservation-image img {
+    width: 48%; /* Adjusted to take up less space (for side-by-side display) */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+/* For small screens, stack images vertically */
+@media (max-width: 768px) {
+    .conservation-image {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .conservation-image img {
+        width: 100%; /* Images will take up full width */
+        margin-bottom: 20px; /* Adds space between the images */
+    }
+}
